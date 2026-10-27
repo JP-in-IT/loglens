@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "loglens"
+version = "0.1.0"
+description = "Detect brute force, account discovery, and web attacks in SSH and web server logs."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jonathan Pineset" }]
+
+[project.scripts]
+loglens = "loglens.cli:main"
+
+[tool.setuptools]
+packages = ["loglens"]
